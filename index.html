@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Glove Interface</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div id="display">
+        <!-- Data from the data glove will be displayed here -->
+        No data available
+    </div>
+    <div class="buttons-container">
+        <button id="startButton">Start</button>
+        <button id="stopButton">Stop</button>
+    </div>
+    <button id="downloadButton">Download Dataset</button>
+    <select id="formatSelect" style="display:none;">
+        <option value="pdf">PDF</option>
+        <option value="doc">DOC</option>
+        <option value="json">JSON</option>
+    </select>
+    <div class="printable-content" id="printableContent">
+        <!-- Printable content will be dynamically generated here -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

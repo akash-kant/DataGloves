@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Background color set to black */
+    color: #fff; /* Text color set to white */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#display {
+    width: 80%;
+    height: 60vh;
+    border: 2px solid #333;
+    background-color: #222; /* Dataset box color set to light black */
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #333; /* Button color set to light black */
+    border: none;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #444; /* Darken button color on hover */
+}
+
+select {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #333; /* Dropdown select color set to light black */
+    border: none;
+    color: #fff;
+}
+
+.printable-content {
+    display: none;
+}
+
+@media print {
+    .printable-content {
+        display: block;
+    }
+}
